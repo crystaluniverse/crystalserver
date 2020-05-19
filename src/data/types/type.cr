@@ -2,7 +2,8 @@ require "msgpack"
 
 abstract struct Crystal::Schema
     include MessagePack::Serializable
-    property id : Int64
+    property id : Int32
+    def initialize(@id); end
     
 end
 
