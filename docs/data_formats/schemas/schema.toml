@@ -1,0 +1,6 @@
+# object which represents a schema
+@url = twin.schema
+id = 0
+name = "" (S)
+#textual representation of the schema
+schema = "" (S)

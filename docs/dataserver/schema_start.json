@@ -1,0 +1,13 @@
+{
+    "id": 1,
+    "time_start": 0,
+    "time_stop": 0,
+    "path": "",
+    "params": "",
+    "result":"",
+    "timeout": 0,
+    "retry":0,
+    "caller_id":3,
+    "return_queue":"",
+    "return_authorized":[1,2]
+  }
