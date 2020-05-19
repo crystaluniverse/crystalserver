@@ -1,0 +1,14 @@
+name: crystalserver
+version: 0.1.0
+
+authors:
+  - hamdy <hamdy.a.farag@gmail.com>
+
+dependencies:
+  
+  msgpack:
+    github: crystal-community/msgpack-crystal
+
+crystal: 0.34.0
+
+license: MIT
