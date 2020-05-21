@@ -10,51 +10,8 @@ AnsiColors = {
         "RESET" => "\u001b[0m",
 }
 
-class Out
-    property lines : Array(String) = Array(String).new
-    def print
-        @lines.each do |line|
-            puts line
-        end
-    end
-
-    def add(line)
-        @lines.push(line)
-    end
-
-    def display(x)
-        puts x
-    end
-end
-
 class Crystal::MD::Parser < IO::Memory
-    property o = Out.new
-    def write(slice : Bytes) : Nil
-        check_writeable
-        check_open
-    
-        count = slice.size
-    
-        return if count == 0
-    
-        new_bytesize = @pos + count
-        if new_bytesize > @capacity
-          check_resizeable
-          resize_to_capacity(Math.pw2ceil(new_bytesize))
-        end
-    
-        slice.copy_to(@buffer + @pos, count)
-    
-        if @pos > @bytesize
-          (@buffer + @bytesize).clear(@pos - @bytesize)
-        end
-        @pos += count
-        @bytesize = @pos if @pos > @bytesize
-        nil
-      end
-
       def process(start : Int32)
-        
         data_blocks = [] of String
         buffer = IO::Memory.new
         data_block_started = false
@@ -151,12 +108,11 @@ class Crystal::MD::Parser < IO::Memory
                     pos += 1
                 end
             end
-            # puts "**"
-            o.add line.byte_slice(tags_start, tags_end-tags_start).to_s
-            o.add line.byte_slice(job_start, job_end-job_start).to_s
-            o.add log_level.to_s
-            # o.add buffer.to_s
-            o.print
+            
+            tags = line.byte_slice(tags_start, tags_end-tags_start).to_s
+            job = line.byte_slice(job_start, job_end-job_start).to_s
+            log_level = log_level.to_s
+            text = buffer.to_s
     end
 
     def code_block_process(block : String)
