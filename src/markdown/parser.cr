@@ -96,6 +96,7 @@ class Crystal::MD::Parser < IO::Memory
                     job_found = true
                     pos += 1
                 elsif first == ' ' && second == '#' && pos != 0
+                    #comment can be at beginning of line TODO:
                     remark_found = true
                     pos += 1
                 else
