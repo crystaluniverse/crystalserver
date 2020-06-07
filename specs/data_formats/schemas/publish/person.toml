@@ -1,0 +1,61 @@
+#schemaurl: 3bot.person.profile
+[info]
+full_name = "Owen Kemp"
+#free text for now
+countries = ["Austria"]
+#free text for now
+cities = ["Vienna"]
+#free text for now
+companies = ["Artichoke Computing"]
+alias = []
+tags = ""
+
+[links]
+linkedin = "https://www.linkedin.com/in/aaaaa/"
+websites = ["https://www.artichoke-computing.com/#"]
+facebook = ""
+telegram = ""
+
+[profile]
+intro_video = ""
+intro_text_purpose = """
+    this is a multi line text
+    can be used to describe profile from human perspective
+    optional: can be part of the profile.md file
+    """
+intro_text_experience = """
+    optional experience...
+    can be part of the profile.md file
+    """
+
+#any comment relevant for the circle
+comment = ""
+
+[[circle]]
+#threebot id who owns the circle
+tid = "freeflow.3bot"
+#circle name
+cname = "matchmakers.green"
+#user alias in the circle, can be more than 1, then ',' used (list)
+alias = ""
+# one of: owner, stakeholder, member, contributor, viewer
+membership = "member"
+#free to be chosen tags, see tag format
+tags = ""
+
+    [[circle.profile]]
+    intro_video = ""
+    intro_text = """
+        this is a multi line text
+        can be used to describe profile in relation to this circle
+        """
+    #any comment relevant for the circle
+    comment = ""
+    #if websites or url's relevant for this circle
+    websites = []
+
+[[circle]]
+tid = "freeflow.3bot"
+name = "ambassador.networker.europe"
+membertype = "member"
+tags = ""

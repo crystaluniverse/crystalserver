@@ -1,0 +1,11 @@
+[[aci]]
+#identification of who owns the acl
+tid = ""
+#unique name per threebot
+name = ""
+#list of threebot id's, normally empty
+threebot_ids = [""]
+#can be empty
+circle_ids = [""]
+#list of enumerators
+rights = ""

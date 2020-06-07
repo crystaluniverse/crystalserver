@@ -1,0 +1,27 @@
+#schemaurl: 3bot.person.profile
+[info]
+#threebot id
+tid = ""
+#unique name in threebot
+name = ""
+title = "Title of a site"
+#set of aliases
+alias = [""]
+tags = ""
+
+[links]
+linkedin = ""
+websites = []
+facebook = ""
+telegram = ""
+
+[[include]]
+#"$tid:$circle_id"
+topic_ids = ["kristof.3bot:mytopic1"]
+
+    [[include.filter]]
+    include = ["kristof.3bot:ourambassadors.vienna"]
+    exclude = []
+
+
+

@@ -1,0 +1,20 @@
+#schemaurl: 3bot.person.profile
+[info]
+#threebot id
+tid = ""
+#unique name in threebot
+name = ""
+title = "This is the title of a topic"
+#set of aliases
+alias = [""]
+tags = ""
+
+[links]
+linkedin = ""
+websites = []
+facebook = ""
+telegram = ""
+
+[git]
+...
+
