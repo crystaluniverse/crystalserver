@@ -4,7 +4,7 @@ log is not an object its the textual representation
 
 see [all_in_one_textformat](all_in_one_textformat.md)
 
-it never gets stored as an object, always at runtime deserialized.
+it never gets stored as an object, always at runtime deserialized (is too inefficient to store as objects).
 
 ## how does it get stored
 
@@ -12,7 +12,7 @@ there are 2 options to store logs
 
 ### in BCDB
 
-as object [logcontainer](schema/logcontainer.toml)
+as object [logcontainer](schemas/logcontainer.toml)
 
 ### on filesystem
 

@@ -80,7 +80,7 @@ when send to stdout, the right ansi chars will be used to colorize
 ### Job ID
 
 - at end of line do ```[$jobid]```
-- at end of line do ```[$twinid:$jobid]```
+- at end of line do ```[$3botid:$jobid]```
 - defines where the e.g. logs belong too
 
 ### time marked
@@ -105,61 +105,7 @@ e.g.
 
 ## data
 
-- is a multiline format
-- uses code block like in markdown
+!!!include:data_in_text.md
 
-
-> \```json $schemaurl($twinid.$topicid.$id)<BR>
-> here some data in yaml, toml or json ...<BR>
-> \```
-
-or
-
-> \```yaml $schemaurl($twinid.$topicid.$id)<BR>
-> here some data in yaml, toml or json ...<BR>
-> \```
-
-or 
-
-> \```toml $schemaurl($twinid.$topicid.$id)<BR>
-> here some data in yaml, toml or json ...<BR>
-> \```
-
-the cool thing is that in markdown it would format well to a dataobj
-and the schema is not seeable in rendering but ofcourse is in source format
-
-### schemaurl
-
-- schemaurl is a ```.``` separated url, can be just 1 name
-- if only 1 name given then will look on the defined topic if that name exists for url (1 or 2e part of a bigger url)  
-- e.g. book would match 
-    - ```something.book```
-    - ```book```    
-    - ```book.3```  #because last is just a version
-    - ```something.book.3```
-    - but would not match ```something.book.sub``` or ```something.book.sub.3```
-
-
-### format of the topline in the code block
-
-```
-#just the used schema
-$format $schemaurl
-```
-
-```
-$format $schemaurl($twinid.$topicid.$id)
-```
-
-```
-#no ID so is new one
-$format $schemaurl($twinid.$topicid.new)
-
-```
-#id specified but not topic id, but because is still unique in a 3bot it will still work
-#only useful for update
-$format $schemaurl($twinid.$id)
-```
-
-this topline allows us to specified if the data is already stored on a 3bot or not, its a unique location
+see [more info about dataidentification](data_identification.md)
 

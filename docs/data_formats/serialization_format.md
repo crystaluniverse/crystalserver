@@ -17,11 +17,11 @@ the message pack is a list of following records
 
 | name  | size in bytes | descr |
 |---|---|---|
-| twin_id | int32 | id of crystal twin |
-| obj_id | int32 | id of object in crystal twin |
+| 3bot_id | int32 | id of crystal 3bot |
+| obj_id | int32 | id of object in crystal 3bot |
 | schema url | string | points to the schema used |
 | payload | bytes | msgpack encoded object itself |
-| optional signature | 64bytes | signature with priv key of crystal twin |
+| optional signature | 64bytes | signature with priv key of crystal 3bot |
 
 ## remarks
 

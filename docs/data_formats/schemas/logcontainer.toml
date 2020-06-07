@@ -1,7 +1,0 @@
-# object which represents a schema
-@url = twin.logs
-id = 0
-#max 1 MB of logs in our textual format
-# see all_in_one_textformat.md
-time = (T)
-logs = "" (S)
