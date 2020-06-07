@@ -4,7 +4,7 @@ log is not an object its the textual representation
 
 see [all_in_one_textformat](all_in_one_textformat.md)
 
-it never gets stored as an object, always at runtime deserialized (is too inefficient to store as objects).
+it never gets stored as an object, always at runtime deserialized (is too inefficient to store as objects   ).
 
 ## how does it get stored
 
