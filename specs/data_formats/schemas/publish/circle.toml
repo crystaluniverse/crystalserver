@@ -1,4 +1,4 @@
-#schemaurl: 3bot.person.profile
+#schemaurl: 3bot.circle.profile
 [info]
 #threebot id
 tid = ""
@@ -6,7 +6,7 @@ tid = ""
 name = ""
 title = "This is the name of a circle"
 #set of aliases
-alias = [""]
+aliases = []
 #enumerator from company, country, city, group, project, funnel, ...
 type = ""
 tags = ""

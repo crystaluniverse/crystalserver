@@ -35,15 +35,15 @@ comment = ""
 #threebot id who owns the circle
 tid = "freeflow.3bot"
 #circle name
-cname = "matchmakers.green"
+name = "matchmakers.green"
 #user alias in the circle, can be more than 1, then ',' used (list)
-alias = ""
+aliases = ""
 # one of: owner, stakeholder, member, contributor, viewer
 membership = "member"
 #free to be chosen tags, see tag format
 tags = ""
 
-    [[circle.profile]]
+    [circle.profile]
     intro_video = ""
     intro_text = """
         this is a multi line text

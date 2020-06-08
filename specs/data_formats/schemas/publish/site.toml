@@ -1,4 +1,6 @@
-#schemaurl: 3bot.person.profile
+#schemaurl: 3bot.site
+
+# represents a site and can include parts from other topics (e.g include markdown from a wiki or a toml data from a data repo)
 [info]
 #threebot id
 tid = ""
@@ -6,7 +8,7 @@ tid = ""
 name = ""
 title = "Title of a site"
 #set of aliases
-alias = [""]
+aliases = [""]
 tags = ""
 
 [links]
@@ -15,13 +17,13 @@ websites = []
 facebook = ""
 telegram = ""
 
-[[include]]
+[[includes]]
 #"$tid:$circle_id"
 topic_ids = ["kristof.3bot:mytopic1"]
 
-    [[include.filter]]
-    include = ["kristof.3bot:ourambassadors.vienna"]
-    exclude = []
+    [includes.filter]
+    includes = ["kristof.3bot:ourambassadors.vienna"]
+    excludes = []
 
 
 

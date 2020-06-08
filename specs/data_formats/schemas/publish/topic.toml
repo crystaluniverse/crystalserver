@@ -1,4 +1,5 @@
-#schemaurl: 3bot.person.profile
+#schemaurl: 3bot.topic
+## can be a wiki or a data repo
 [info]
 #threebot id
 tid = ""
@@ -6,7 +7,7 @@ tid = ""
 name = ""
 title = "This is the title of a topic"
 #set of aliases
-alias = [""]
+aliases = [""]
 tags = ""
 
 [links]
@@ -16,5 +17,5 @@ facebook = ""
 telegram = ""
 
 [git]
-...
-
+url = ""
+branch = ""
