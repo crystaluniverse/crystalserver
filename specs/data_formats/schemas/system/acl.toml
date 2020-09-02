@@ -1,0 +1,11 @@
+
+id = 0 #unique id of the acl (given by bcdb, only relevant in the current tbot(tid))
+name = "" #optional and free
+rights = ""  #set of letters e.g. rwd   (each letter has meaning in line to what system expects)
+expiration = 0 #epoch, after no longer relevant
+
+#array of all circles linked to it
+[circle]
+tid = ""  #who hosts the circle
+name = "" #unique name as used in that tbot
+

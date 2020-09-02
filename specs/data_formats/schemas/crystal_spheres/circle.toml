@@ -1,0 +1,32 @@
+#schemaurl: 3bot.circle
+[info]
+tid = ""        #threebot id (int) which hosts this circle: as defined on phonebook
+id = ""         #circle id (int) as id in bcdb behind crystal twin, is unique per crystal twin
+name = ""       #unique name in threebot
+title = "This is the title of a circle"
+alias = [""]    #set of aliases
+type = ""       #enumerator from company, country, city, group, project, ...
+tags = ""
+members = []            #tid's = int's (each tid is unique on global level, phonebook)
+children = []           #circles which are underneith this circle
+description = """
+    
+    """
+remarks = """
+    
+    """
+acl_id = 0 
+
+[links]
+linkedin = ""
+websites = []
+facebook = ""
+telegram = ""
+
+[profile]
+intro_video = ""
+intro_text_purpose = """
+    this is a multi line text
+    can be used to describe profile of circle from human perspective
+    """
+

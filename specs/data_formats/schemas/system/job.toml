@@ -16,7 +16,7 @@ timeout = 300 (I)
 # nr of times to retry
 retry = 0 (I)
 # crystal 3bot id who called it
-3bot_id = 0 (I)
+tbot_id = 0 (I)
 # topic id, topic as used in 3bot server for a particular 3bot_id
 topic_id = 0 (I)
 # return queue, can be any string

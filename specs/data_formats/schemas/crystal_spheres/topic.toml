@@ -8,6 +8,8 @@ title = "This is the title of a topic"
 #set of aliases
 alias = [""]
 tags = ""
+description = """
+    """
 
 [links]
 linkedin = ""
@@ -15,6 +17,9 @@ websites = []
 facebook = ""
 telegram = ""
 
+#where is the data of this topic, so all objects can be loaded from filesystem in memory
 [git]
-...
+url= ""
+branch = ""
+path = ""  #if not in url
 

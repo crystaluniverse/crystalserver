@@ -1,6 +1,0 @@
-# object which represents a schema
-@url = 3bot.schema
-id = 0
-name = "" (S)
-#textual representation of the schema
-schema = "" (S)
